@@ -24,9 +24,9 @@ spec:
             initialDelaySeconds: 15
             periodSeconds: 10
           volumeMounts:
-          - mountPath: /circuit-state
-            name: circuit-state-volume
-        volumes:
+            - mountPath: /circuit-state
+              name: circuit-state-volume
+      volumes:
         - name: circuit-state-volume
           emptyDir:
             sizeLimit: 500Mi
