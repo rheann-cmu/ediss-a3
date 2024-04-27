@@ -4,7 +4,7 @@ metadata:
   name: mobile-app-bff-service
 spec:
   selector:
-    app: mobile-app-bff-deployment
+    app: mobile-bff-deployment
   ports:
     - protocol: TCP
       port: 80 # External port clients will use to access the service
