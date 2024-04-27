@@ -16,10 +16,10 @@ spec:
         - name: web-app-bff-deployment-container
           image: rheann/webappbff-a2:latest # Image name of book service
           ports:
-            - containerPort: 8080 # Container Port
+            - containerPort: 8081 # Container Port
           livenessProbe:
             httpGet:
               path: /status
-              port: 8080 # Port name of liveness probe
+              port: 8081 # Port name of liveness probe
             initialDelaySeconds: 180
             periodSeconds: 30
