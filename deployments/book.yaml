@@ -21,8 +21,8 @@ spec:
             httpGet:
               path: /status
               port: 3000 # Port name of liveness probe 
-            initialDelaySeconds: 15
-            periodSeconds: 10
+            initialDelaySeconds: 180
+            periodSeconds: 30
           volumeMounts:
             - mountPath: /circuit-state
               name: circuit-state-volume
